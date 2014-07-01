@@ -4,16 +4,16 @@
 #include <Ethernet.h>
 
 
-IPAddress ipLocal(192, 168, 1, 101);
+IPAddress ipLocal(192, 168, 0, 201);
 byte mac[] = { 0x90, 0xA2, 0xDA, 0x0F, 0x50, 0x4E };
 
 WebServer webserver("", 80);
 
-RelaisManager relaisServo(2, 8);
+RelaisManager relaisServo(2, 3);
 
-RelaisManager relaisVitesseOne(3, 9);
-RelaisManager relaisVitesseTwo(4, 10);
-RelaisManager relaisVitesseThree(5, 11);
+RelaisManager relaisVitesseOne(8, 9);
+RelaisManager relaisVitesseTwo(6, 7);
+RelaisManager relaisVitesseThree(4, 5);
 
 
 
